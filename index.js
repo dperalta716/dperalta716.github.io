@@ -7,9 +7,9 @@ function outf(text) {
   // Function to fetch and run the Python game
   async function runPythonCode() {
     try {
-      // Fetch the Python code from the game.py file
-      const response = await fetch("./game.py");
-      if (!response.ok) throw new Error(`Failed to load game.py: ${response.statusText}`);
+      // Fetch the Python code from the kings_treasure.py file
+      const response = await fetch("./kings_treasure.py");
+      if (!response.ok) throw new Error(`Failed to load kings_treasure.py: ${response.statusText}`);
       const pythonCode = await response.text();
   
       // Clear previous output
